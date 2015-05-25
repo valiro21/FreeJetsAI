@@ -36,6 +36,8 @@ void aidebug::TryPlane (int i, int j, int ok, int m, int mi, int mj, const char 
     if (!possible)
         positions.clear ();
 
+    #ifdef __AILOG
     if (log && !positions.empty () )
         ailog::log (positions, s);
+    #endif
 }

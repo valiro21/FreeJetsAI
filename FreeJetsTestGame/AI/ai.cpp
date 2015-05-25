@@ -79,16 +79,19 @@ int ai::solve (const char in[], const char out[], const char log[]) {
             else if (v[i][j] == 0 && p[i][j] == maxx)
                 psb.push_back (make_pair (i, j));
         }
-
-    //ailog::PrintLogMatrix (log);
+    #ifdef __AILOG
+    ailog::PrintLogMatrix (log);
+    #endif // __AILOG
 
     srand (time(NULL));
     int x = rand () % psb.size ();
 
+
+    #ifdef __AILOG
+    ailog::log (psb[x], log);
+    #endif
     fstream fout;
     fout.open (out,std::fstream::out);
-    //fout.open (out,std::fstream::out | std::fstream::app);
-    //ailog::log (psb[x], log);
     fout << psb[x].first << ' ' << psb[x].second << '\n';
     fout.close ();
 

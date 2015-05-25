@@ -48,8 +48,10 @@ void Turn () {
         ai::clear ("ai.out");
         ai::solve("AI/ai.in", "AI/ai.out", "AI/debug.log");
         hit = GetHit ();
+        #ifdef __AILOG
         if (hit)
             ailog::log ("hit!", "AI/debug.log");
+        #endif
         hits++;
     }
 }

@@ -1,5 +1,6 @@
 #ifndef __AI.H
 #define __AI.H
+//#define __AILOG
 #include <fstream>
 #include <iostream>
 #include <iomanip>
@@ -10,8 +11,8 @@
 #include <utility>
 #include <string>
 
-namespace ailog {
 
+namespace ailog {
     extern void PrintLogMatrix (const char s[]); //log
 
     extern void log (std::vector<std::pair<int, int> > &v, const char s[]);
@@ -40,8 +41,6 @@ namespace ai {
 }
 
 namespace aidebug {
-
-
     extern void DebugPlane(int mi, int mj, const char in[], const char log[]);
 
     extern void TryPlane(int i, int j, int ok, int m, int mi, int mj, const char s[]);
