@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1432579737 source:a:\vali\documents\freejets\ai\main.cpp
+	<fstream>
+	<vector>
+	<utility>
+	<cstdlib>
+	<ctime>
+
+1432581656 source:a:\vali\documents\freejets\ai\ai.cpp
+	"ai.h"
+
+1432581671 a:\vali\documents\freejets\ai\ai.h
+	<fstream>
+	<vector>
+	<utility>
+	<cstdlib>
+	<ctime>
+
+1432589152 source:a:\vali\documents\freejets\freejetstestgame\ai\ai.cpp
+	"ai.h"
+
+1432589099 a:\vali\documents\freejets\freejetstestgame\ai\ai.h
+	<fstream>
+	<iostream>
+	<iomanip>
+	<vector>
+	<utility>
+	<cstdlib>
+	<ctime>
+	<utility>
+
+1432586269 source:a:\vali\documents\freejets\freejetstestgame\ai\main.cpp
+	"ai.h"
+
+1432589166 source:a:\vali\documents\freejets\freejetstestgame\ai\aidebug.cpp
+	"ai.h"
+
+1432589177 source:a:\vali\documents\freejets\freejetstestgame\ai\ailog.cpp
+	"ai.h"
+
