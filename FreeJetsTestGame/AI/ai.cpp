@@ -80,7 +80,7 @@ int ai::solve (const char in[], const char out[], const char log[]) {
                 psb.push_back (make_pair (i, j));
         }
 
-    ailog::PrintLogMatrix (log);
+    //ailog::PrintLogMatrix (log);
 
     srand (time(NULL));
     int x = rand () % psb.size ();
@@ -88,7 +88,7 @@ int ai::solve (const char in[], const char out[], const char log[]) {
     fstream fout;
     fout.open (out,std::fstream::out);
     //fout.open (out,std::fstream::out | std::fstream::app);
-    ailog::log (psb[x], log);
+    //ailog::log (psb[x], log);
     fout << psb[x].first << ' ' << psb[x].second << '\n';
     fout.close ();
 
